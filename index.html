@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HoaXinhYeu Shop</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header-logined.html");
+        </script>
+        <main class="container home">
+            <!-- Slideshow -->
+            <div class="home__container">
+                <div class="slideshow">
+                    <div class="slideshow__inner">
+                        <div class="slideshow__item">
+                            <div class="mySlides fade">
+                                <a href="#!">
+                                    <img
+                                        class="slideshow__img"
+                                        src="./assets/img/slideshow/item 1.png"
+                                        style="width: 100%"
+                                    />
+                                </a>
+                            </div>
+                            <div class="mySlides fade">
+                                <a href="./cat.html">
+                                    <img
+                                        class="slideshow__img"
+                                        src="./assets/img/slideshow/item 2.png"
+                                        style="width: 100%"
+                                    />
+                                </a>
+                            </div>
+                            <div class="mySlides fade">
+                                <a href="./dog.html">
+                                    <img
+                                        class="slideshow__img"
+                                        src="./assets/img/slideshow/item 3.png"
+                                        style="width: 100%"
+                                    />
+                                </a>
+                            </div>
+                            <br />
+                            <div style="text-align: center">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Browse Categories -->
+            <section class="home__container">
+                <div class="home__row">
+                    <h2 class="home__heading">Danh mục sản phẩm</h2>
+                </div>
+                <div class="home__cate row row-cols-3 row-cols-md-1">
+                    <!-- Category item 1 -->
+                    <div class="col">
+                        <a href="#!">
+                            <article class="cate-item">
+                                <img
+                                    src="./assets/img/category-item/item-1.jpg"
+                                    alt=""
+                                    class="cate-item__thumb"
+                                />
+                                <div class="cate-item__info">
+                                    <h3 class="cate-item__title">
+                                        Hoa kèm chậu
+                                    </h3>
+                                    <p class="cate-item__desc">
+                                        Đồ ăn, chậu, ...
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Category item 2 -->
+                    <div class="col">
+                        <a href="#!">
+                            <article class="cate-item">
+                                <img
+                                    src="./assets/img/category-item/item-2.jpg"
+                                    alt=""
+                                    class="cate-item__thumb"
+                                />
+                                <div class="cate-item__info">
+                                    <h3 class="cate-item__title">
+                                        Hoa lẻ, hoa bó
+                                    </h3>
+                                    <p class="cate-item__desc">
+                                        Các loại thú cưng từ A-Z
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <!-- Category item 3 -->
+                    <div class="col">
+                        <a href="#!">
+                            <article class="cate-item">
+                                <img
+                                    src="./assets/img/category-item/item-3.jpg"
+                                    alt=""
+                                    class="cate-item__thumb"
+                                />
+                                <div class="cate-item__info">
+                                    <h3 class="cate-item__title">
+                                        Phụ kiện nhỏ
+                                    </h3>
+                                    <p class="cate-item__desc">
+                                        Đồ ăn, chậu, ...
+                                    </p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Browse Products -->
+            <section class="home__container">
+                <div class="home__row">
+                    <h2 class="home__heading">Sản phẩm bán chạy</h2>
+                    <div class="filter-wrap">
+                        <button class="filter-btn">
+                            Bộ lọc
+                            <img
+                                src="./assets/icons/filter.svg"
+                                alt=""
+                                class="filter-btn__icon icon"
+                            />
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="row row-cols-5 row-cols-lg-2 row-cols-sm-1 g-3 product-container"
+                >
+                    <!-- Product cards will be injected here by JavaScript -->
+                </div>
+                <div id="pagg"></div>
+                <!-- Pagination controls -->
+            </section>
+        </main>
+        <!-- jQuery -->
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <script type="text/javascript" src="./assets/js/slider.js"></script>
+    </body>
+</html>
