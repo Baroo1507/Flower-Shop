@@ -23,6 +23,7 @@
         border-radius: 20px;
         background: var(--dropdown-bg-color);
         box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
+        height: 300px;
 
         &::before {
             content: url("../icons/dropdown-arrow.svg");

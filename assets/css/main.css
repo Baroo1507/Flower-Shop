@@ -2163,6 +2163,7 @@ html {
   border-radius: 20px;
   background: var(--dropdown-bg-color);
   box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
+  height: 300px;
 }
 .dropdown__inner::before {
   content: url("../icons/dropdown-arrow.svg");
@@ -3855,6 +3856,7 @@ html {
 .prod-info-content {
   border-radius: 20px;
   background: var(--product-detail-info-content-bg);
+  margin-bottom: 30px;
 }
 
 .prod-preview {
@@ -3934,12 +3936,14 @@ html {
 
 .prod-info {
   padding: 60px;
+  margin-bottom: 50px;
   border-radius: 10px;
   background: var(--product-detail-info-bg);
 }
 @media (max-width: 1399.98px) {
   .prod-info {
     padding: 40px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 991.98px) {

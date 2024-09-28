@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pet Mart</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header-logined.html");
+        </script>
+
+        <!-- MAIN -->
+        <main class="product-page">
+            <main class="container">
+                <!-- Breadcrumbs -->
+                <div class="product-container">
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="#!" class="breadcrumbs__link">
+                            <img src="./assets/icons/arrow-right.svg" alt="" />
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="breadcrumbs__link">
+                            <img src="./assets/icons/arrow-right.svg" alt="" />
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="breadcrumbs__link">
+                            <img src="./assets/icons/arrow-right.svg" alt="" />
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="breadcrumbs__link breadcrumbs__link--current"></a>
+                        </li>
+                    </ul>
+                </div>
+                
+
+                <!-- Product info -->
+                <div class="product-container prod-info-content">
+                    <div class="row">
+                      <div class="col-5 col-xl-6 col-lg-12">
+                        <div class="prod-preview">
+                          <div class="prod-preview__list">
+                            <div class="prod-preview__item">
+                              <img src="" alt="" class="prod-preview__img" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-7 col-xl-6 col-lg-12">
+                        <form action="" class="form">
+                          <section class="prod-info">
+                            <h1 class="prod-info__heading"></h1>
+                            <div class="row">
+                              <div class="col-5 col-xxl-6 col-xl-12">
+                                <div class="prod-prop">
+                                  <img src="./assets/icons/star.svg" alt="" class="prod-prop__icon" />
+                                  <h4 class="prod-prop__title"></h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-7 col-xxl-6 col-xl-12">
+                                <div class="prod-props">
+                                  <div class="prod-prop">
+                                    <img src="./assets/icons/document.svg" alt="" class="prod-prop__icon icon" />
+                                    <h4 class="prod-prop__title">So sánh</h4>
+                                  </div>
+                                  <div class="prod-prop">
+                                    <img src="./assets/icons/buy.svg" alt="" class="prod-prop__icon icon" />
+                                    <div>
+                                      <h4 class="prod-prop__title">Giao hàng</h4>
+                                      <p class="prod-prop__desc">Từ 25.000đ cho 1-3 ngày</p>
+                                    </div>
+                                  </div>
+                                  <div class="prod-prop">
+                                    <img src="./assets/icons/bag.svg" alt="" class="prod-prop__icon icon" />
+                                    <div>
+                                      <h4 class="prod-prop__title">Mô tả</h4>
+                                      <p class="prod-prop__desc product__desc"></p>
+                                    </div>
+                                  </div>
+                                  <div class="prod-info__card">
+                                    <div class="prod-info__row">
+                                      <p class="prod-info__total-price"></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </main>
+                  
+<!-- Scripts -->
+<script src="./assets/js/best-seller.js"></script>
+<script src="./assets/js/detail.js"></script>
+
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+    </body>
+</html>
+                        

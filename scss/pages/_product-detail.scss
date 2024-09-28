@@ -20,6 +20,7 @@
 .prod-info-content {
     border-radius: 20px;
     background: var(--product-detail-info-content-bg);
+    margin-bottom: 30px;
 }
 
 .prod-preview {
@@ -101,11 +102,13 @@
 
 .prod-info {
     padding: 60px;
+    margin-bottom: 50px;
     border-radius: 10px;
     background: var(--product-detail-info-bg);
 
     @include abstracts.screen(xxl) {
         padding: 40px;
+        margin-bottom: 30px;
     }
 
     @include abstracts.screen(lg) {
@@ -116,6 +119,7 @@
         border-radius: 20px;
         padding: 0 16px 16px;
         margin-top: 0;
+      
     }
 
     &__heading {
@@ -257,6 +261,7 @@
 
     &__content {
         display: none;
+        
 
         &--current {
             display: block;
