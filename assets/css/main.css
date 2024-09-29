@@ -1378,7 +1378,7 @@ html.dark {
   --header-bg-color: #171c28;
   --footer-bg-color: var(--header-bg-color);
   --footer-text-color: #9e9da6;
-  --top-act-group-bg-color: #292e39;
+  --top-act-group-bg-color: #b9babe;
   --top-act-group-shadow: rgba(0, 0, 0, 0.2);
   --top-act-group-separate: #545458;
   --header-act-dropdown-bg: #2f3441;
@@ -2192,7 +2192,7 @@ html {
 
 .top-menu {
   --main-column-width: 292px;
-  --max-inner-height: calc(min(582px, 100vh - 158px) - var(--inner-padding) * 2);
+  --max-inner-height: calc(min(300px, 100vh - 158px) - var(--inner-padding) * 2);
   position: relative;
 }
 .top-menu__main {
@@ -2632,8 +2632,8 @@ html {
 .pag__button {
   display: inline-block;
   position: relative;
-  width: 40px; /* Adjust size as needed */
-  height: 40px; /* Adjust size as needed */
+  width: 36px; /* Adjust size as needed */
+  height: 36px; /* Adjust size as needed */
   margin: 0 5px;
   border: none;
   border-radius: 50%; /* Rounded buttons */

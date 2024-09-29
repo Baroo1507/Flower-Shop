@@ -1,0 +1,108 @@
+donggia25k.html<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HoaXinhYeu</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header-logined.html");
+        </script>
+
+        <!-- MAIN -->
+        <main class="pet">
+            <div class="container">
+                <!-- Breadcrumbs -->
+                <div class="pet__container">
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="./index.html" class="breadcrumbs__link">
+                                Trang chủ
+                                <img
+                                    src="./assets/icons/arrow-right.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./product.html" class="breadcrumbs__link">
+                                Sản phẩm
+                                <img
+                                    src="./assets/icons/arrow-right.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./hoachau.html" class="breadcrumbs__link">
+                                Hoa chậu
+                                <img
+                                    src="./assets/icons/arrow-right.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="breadcrumbs__link">
+                                Đồng giá 45k
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <section class="pet__container">
+                    <div class="pet__row">
+                        <h2 class="pet__heading">Đồng giá 45k</h2>
+                    </div>
+                    <!-- Product info -->
+                    <div
+                        class="row row-cols-5 row-cols-lg-2 row-cols-sm-1 g-3 product-container"
+                    >
+                        <!-- Product cards will be injected here by JavaScript -->
+                    </div>
+                    <div id="pagg"></div>
+                    <!-- Pagination controls -->
+                </section>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+        <script>
+            const selectedCategory = "Hoa chậu"; // Replace this with the actual selected category
+            const selectedSubcategory = "Đồng giá 45k"; // Set to an empty string if there is no subcategory
+        </script>
+
+        <script src="./assets/js/product.js"></script>
+        <script src="./assets/js/subprodct-filter.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    </body>
+</html>

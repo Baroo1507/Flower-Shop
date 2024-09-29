@@ -1,7 +1,7 @@
 
-  let data = product; 
+let data = product 
 
-  const itemsPerPage = 10; // Number of products per page
+  const itemsPerPage = 15; // Number of products per page
 let currentPage = 1; // Start at page 1
 const totalPages = Math.ceil(data.length / itemsPerPage); // Total number of pages
 
