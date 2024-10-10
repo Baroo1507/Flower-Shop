@@ -68,7 +68,7 @@ function generateRandomScore() {
                 name: "Cúc hồng",
                 price: "30.000",
                 desc: "Bạn đam mê hội họa và ",
-                cover: "./assets/img/product/full/Đồng giá 30K/Cúc hồng.jpg",
+                cover: "./assets/img/product/full/Đồng giá 30k/Cúc hồng.jpg",
                 score: generateRandomScore(),
                 category: "Hoa chậu",
                 subcategory: "Đồng giá 30k"
@@ -78,7 +78,7 @@ function generateRandomScore() {
                 name: "Cúc xanh",
                 price: "30.000",
                 desc: "Bạn đam mê hội họa và ",
-                cover: "./assets/img/product/full/Đồng giá 30K/Cúc xanh.jpg",
+                cover: "./assets/img/product/full/Đồng giá 30k/Cúc xanh.jpg",
                 score: generateRandomScore(),
                 category: "Hoa chậu",
                 subcategory: "Đồng giá 30k"
@@ -87,7 +87,7 @@ function generateRandomScore() {
                 name: "Hoa bánh kem",
                 price: "30.000",
                 desc: "Bạn đam mê hội họa và ",
-                cover: "./assets/img/product/full/Đồng giá 30K/Hoa bánh kem.jpg",
+                cover: "./assets/img/product/full/Đồng giá 30k/Hoa bánh kem.jpg",
                 score: generateRandomScore(),
                 category: "Hoa chậu",
                 subcategory: "Đồng giá 30k"
@@ -96,7 +96,7 @@ function generateRandomScore() {
                 name: "Hoa cúc họa mi trắng",
                 price: "30.000",
                 desc: "Bạn đam mê hội họa và ",
-                cover: "./assets/img/product/full/Đồng giá 30K/Hoa cúc họa mi trắng.jpg",
+                cover: "./assets/img/product/full/Đồng giá 30k/Hoa cúc họa mi trắng.jpg",
                 score: generateRandomScore(),
                 category: "Hoa chậu",
                 subcategory: "Đồng giá 30k"
@@ -105,7 +105,7 @@ function generateRandomScore() {
                 name: "Hoa cúc trắng nhuỵ cam",
                 price: "30.000",
                 desc: "Bạn đam mê hội họa và ",
-                cover: "./assets/img/product/full/Đồng giá 30K/Hoa cúc trắng nhuỵ cam.jpg",
+                cover: "./assets/img/product/full/Đồng giá 30k/Hoa cúc trắng nhuỵ cam.jpg",
                 score: generateRandomScore(),
                 category: "Hoa chậu",
                 subcategory: "Đồng giá 30k"
@@ -115,7 +115,7 @@ function generateRandomScore() {
                 name: "Hoa hồng đỏ",
                 price: "30.000",
                 desc: "Bạn đam mê hội họa và ",
-                cover: "./assets/img/product/full/Đồng giá 30K/Hoa hồng đỏ.jpg",
+                cover: "./assets/img/product/full/Đồng giá 30k/Hoa hồng đỏ.jpg",
                 score: generateRandomScore(),
                 category: "Hoa chậu",
                 subcategory: "Đồng giá 30k"
@@ -124,7 +124,7 @@ function generateRandomScore() {
                 name: "Hoa hướng dương 1 bông",
                 price: "30.000",
                 desc: "Bạn đam mê hội họa và ",
-                cover: "./assets/img/product/full/Đồng giá 30K/Hoa hướng dương 1 bông.jpg",
+                cover: "./assets/img/product/full/Đồng giá 30k/Hoa hướng dương 1 bông.jpg",
                 score: generateRandomScore(),
                 category: "Hoa chậu",
                 subcategory: "Đồng giá 30k"
@@ -133,7 +133,7 @@ function generateRandomScore() {
                 name: "Hoa tuyết cầu xanh",
                 price: "30.000",
                 desc: "Bạn đam mê hội họa và ",
-                cover: "./assets/img/product/full/Đồng giá 30K/Hoa tuyết cầu xanh.jpg",
+                cover: "./assets/img/product/full/Đồng giá 30k/Hoa tuyết cầu xanh.jpg",
                 score: generateRandomScore(),
                 category: "Hoa chậu",
                 subcategory: "Đồng giá 30k"
@@ -143,7 +143,7 @@ function generateRandomScore() {
                 name: "Hướng dương 2 hoa nhỏ",
                 price: "30.000",
                 desc: "Bạn đam mê hội họa và ",
-                cover: "./assets/img/product/full/Đồng giá 30K/Hướng dương 2 hoa nhỏ.jpg",
+                cover: "./assets/img/product/full/Đồng giá 30k/Hướng dương 2 hoa nhỏ.jpg",
                 score: generateRandomScore(),
                 category: "Hoa chậu",
                 subcategory: "Đồng giá 30k"
