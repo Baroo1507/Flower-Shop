@@ -109,3 +109,26 @@
     animation-name: fade;
     animation-duration: 1.5s;
 }
+.dots-container {
+    text-align: left; /* Align dots to the left */
+    position: absolute;
+    bottom: 10px;
+    left: 10px; /* Adjust this value to move the dots further left if needed */
+    width: auto; /* Adjust width to auto for left alignment */
+}
+
+.dot {
+    height: 20px; /* Increase the height */
+    width: 20px;  /* Increase the width */
+    margin: 0 8px; /* Add more space between the dots */
+    background-color: rgba(255, 255, 255, 0.4); /* Light white color for inactive dots with opacity */
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease, filter 0.6s ease; /* Transition for background color and filter */
+    filter: blur(2px); /* Blur effect for inactive dots */
+}
+
+.dot.active {
+    background-color: #717171; /* White color for active dot */
+    filter: none; /* Remove blur effect for active dot */
+}

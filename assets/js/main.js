@@ -120,6 +120,21 @@ function displayPagination() {
           currentPage = i;
           displayProducts(currentPage); // Display products for the selected page
           displayPagination(); // Re-render pagination to reflect the current page
+          // Function to scroll to the product section
+function scrollToProducts() {
+  const productContainer = document.querySelector(".product-container"); // Select the product container element
+  const productPosition = productContainer.offsetTop; // Get the position of the product container
+
+  // Scroll to the product container
+  window.scrollTo({
+      top: productPosition,
+      behavior: "smooth" // Smooth scrolling effect
+  });
+}
+
+// Call the scroll function after pagination or button press
+scrollToProducts();
+
       };
       
       pagination.appendChild(pageButton);
