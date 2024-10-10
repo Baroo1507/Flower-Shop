@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const categories = [
             { name: "Trang chủ", link: "./indexd.html" }, // Home
+            { name: "Sản phẩm", link: "./product.html" },
             { name: selectedProduct.category, link: categoryLinks[selectedProduct.category] || "#!" }, // Product category
             { name: selectedProduct.subcategory, link: subcategoryLinks[selectedProduct.subcategory] || "#!" }, // Subcategory
             { name: selectedProduct.name, link: "#!", current: true } // Current product name

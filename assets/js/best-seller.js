@@ -1,314 +1,268 @@
-const product  = [
-    {
-      id: 1,
-      name: "Hoa dã quỳnh",
-      price: "25.000",
-      desc: "Bạn đam mê hội họa và muốn bắt đầu học vẽ?Bạn gặp khó khăn trong việc tìm ra sách học phù hợp?Bạn bối rối không biết nên bắt đầu từ đâu?Bộ sách Bí Quyết Hội Họa sẽ là người bạn đồng hành tuyệt vời, giúp bạn có khởi đầu thuận lợi trên con đường học vẽ của mình.Bộ sách được thiết kế với từng cấp độ từ cơ bản đến nâng cao, mang đến cho bạn những kiến thức nền tảng cũng như định hướng để tiếp tục đào sâu đam mê.LUYỆN VẼ HÌNH KHỐI trong bộ sách này sẽ giúp bạn hiểu được cấu trúc cơ bản của các vật thể trong tự nhiên. Thông qua những bài tập vẽ khối đơn giản, bạn sẽ có cái nhìn tổng quan về những kiến thức quan trọng nhất trong hội họa như ánh sáng, phối cảnh, bố cục…, tạo tiền đề cho sự phát triển kỹ năng hội họa sau này",
-      cover: "./assets/img/product/Hoa dã quỳ.jpg",
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 25k"
-    },
-    {
-      id: 2,
-      name: "Hoa thạch thảo hồng",
-      price: "25.000",
-      desc: "Bạn đam mê hội họa và muốn bắt đầu học vẽ? Bạn gặp khó khăn trong việc tìm ra sách học phù hợp? Bạn bối rối không biết nên bắt đầu từ đâu? Bộ sách Bí Quyết Hội Họa sẽ là người bạn đồng hành tuyệt vời, giúp bạn có khởi đầu thuận lợi trên con đường học vẽ của mình. Bộ sách được thiết kế với từng cấp độ từ cơ bản đến nâng cao, mang đến cho bạn những kiến thức nền tảng cũng như định hướng để tiếp tục đào sâu đam mê. KÝ HỌA CHÂN DUNG trong bộ sách này sẽ giới thiệu đến bạn một hình thức về mà bất cứ người đam mê hội họa nào cũng phải biết: ký họa. Sách giúp bạn rèn luyện kỹ thuật ký họa để áp dụng vào các tác phẩm của mình sau này, đồng thời cung cấp cho bạn những hiểu biết quan trọng về cơ thể người, để tiến đến vẽ",
-      cover: "./assets/img/product/Hoa thạch thảo hồng.jpg",
-      score: 4.5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 25k"
-    },
-    {
-      id: 3,
-      name: "Hoa cúc hồng",
-      price: "30.000",
-      desc: "Tôi vẽ với 300 trang sách bao gồm những kỹ năng cơ bản cần có của một họa sĩ truyện tranh, từ tạo hình nhân vật, thiết kế bối cảnh, biểu cảm, các kỹ thuật diễn họa cho đến luật phối cảnh. Đây là một cuốn cẩm nang tuyệt vời dành cho các bạn đang bắt đầu học vẽ truyện tranh. Những kiến thức này có thể không giúp các bạn vẽ đẹp ngay lập tức nhưng sẽ là nền tảng vững chắc giúp bạn hình thành các tiêu chuẩn chuyên nghiệp trong nghề và không mất thời gian tự mò mẫm. Phần minh họa cho các bài học cũng rất hấp dẫn và sáng tạo. Các tác giả đã sử dụng chính nhân vật và trang truyện của mình để làm rõ sự liên quan giữa lý thuyết và thực tế, tính ứng dụng rõ ràng của các kỹ thuật và quy trình sáng tác.",
-      cover: "./assets/img/product/Cúc hồng.jpg",
-      score: 4.9,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 30k"
-    },
-    {
-      id: 4,
-      name: "Hoa cúc xanh",
-      price: "30.000",
-      desc: "- Nir Avieli (sinh năm 1966) ông là một nhà nhân học văn hóa, giáo sư giảng dạy tại Khoa Xã hội học và Nhân học, Đại học Ben Gurion, đồng thời nắm giữ cương vị chủ tịch Hội Nhân học Israel. Hướng nghiên cứu chính của Avieli là về ẩm thực và du lịch. Ngoài Việt Nam, ông còn nghiên cứu thực địa về ẩm thực cả ở quê nhà Israel, lẫn một số quốc gia Nam Á/Đông Nam Á khác như Ấn Độ, Singapore, Thái Lan.",
-      cover: "./assets/img/product/Cúc xanh.jpg",
-      score: 4.8,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 30k"
-    },
-    {
-      id: 5,
-      name: "Hoa bánh kem",
-      price: "30.000",
-      time: "23/11/2023",
-      desc: "Trong kỳ tiếp theo của Ravolution Music Festival sẽ diễn ra vào tháng 12 năm nay tại TP.HCM - kỷ niệm phiên bản thứ 10 mang tên “RAVO-X”, hứa hẹn sẽ mang đến những trải nghiệm và cách tiếp cận đại chúng mới như một lời tri ân suốt quãng thời gian 7 năm vừa qua. RAVO-X sẽ tiếp tục thông điệp mang tính thời đại đã được xây dựng cùng Pepsi trong 2 kỳ trước. Từ UNIVERSAL LOVE với thông điệp tìm lại yêu thương bản thân và hòa cùng năng lượng của vũ trụ, đến “UNITY” sự gắn kết và hãy chờ đón câu chuyện tiếp theo của kỳ tiếp theo này nhé. ",
-      starring: "Karen Gilchrist, James Earl Jones",
-      genres: "Action",
-      tags: "Action, Adventures, Horror",
-      cover: "./assets/img/product/Hoa bánh kem.jpg",
-      video: "../video/video1.mp4",
-      date: "20-Jan-1997",
-      quantity: 1,
-      score: 4.7,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 30k"
-    },
-    {
-      id: 6,
-      name: "Hoa hướng dương 1 bông",
-      price: "30.000",
-      time: "24/11/2023",
-      desc: "The island, like its inhabitants, is wholly fictional. Kong's island home in the Pacific makes its first appearance, along with Kong himself, in the 1933 film King Kong. ",
-      starring: "Brenda Chapman, Jeff Nathanson",
-      genres: "Adventures",
-      tags: "Adventures,Animation,Family",
-      cover: "./assets/img/product/Hoa hướng dương 1 bông.jpg",
-      video: "../video/video2.mp4",
-      date: "10-JUL-2021",
-      quantity: 1,
-      score: 4.7,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 30k"
-    },
-    {
-      id: 7,
-      name: "Hoa hồng đỏ",
-      price: "30.000",
-      time: "23/12/2023",
-      desc: "Piracy is an act of robbery or criminal violence by ship or boat-borne attackers upon another ship or a coastal area, typically with the goal of stealing cargo and other valuable items or properties. ",
-      brand: "James Chinlund, Jeff Nathanson",
-      genres: "Adventures",
-      tags: "Adventures,Action ",
-      cover: "./assets/img/product/Hoa hồng đỏ.jpg",
-      video: "../video/video3.mp4",
-      date: "20-FEB-2010",
-      quantity: 1,
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 30k"
-    },
-    {
-      id: 8,
-      name: "Hoa hướng dương 2 hoa nhỏ",
-      price: "30.000",
-      time: "13/12/2024",
-      desc: "Trong kỳ tiếp theo của Ravolution Music Festival sẽ diễn ra vào tháng 12 năm nay tại TP.HCM - kỷ niệm phiên bản thứ 10 mang tên “RAVO-X”, hứa hẹn sẽ mang đến những trải nghiệm và cách tiếp cận đại chúng mới như một lời tri ân suốt quãng thời gian 7 năm vừa qua. RAVO-X sẽ tiếp tục thông điệp mang tính thời đại đã được xây dựng cùng Pepsi trong 2 kỳ trước. Từ UNIVERSAL LOVE với thông điệp tìm lại yêu thương bản thân và hòa cùng năng lượng của vũ trụ, đến “UNITY” sự gắn kết và hãy chờ đón câu chuyện tiếp theo của kỳ tiếp theo này nhé. ",
-      brand: "Karen Gilchrist, James Earl Jones",
-      genres: "Action",
-      tags: "Action, Adventures, Horror",
-      cover: "./assets/img/product/Hướng dương 2 hoa nhỏ.jpg",
-      video: "../video/video4.mp4",
-      date: "12-Aug-2015",
-      quantity: 1,
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 30k"
-    },
-    {
-      id: 9,
-      name: "Hoa tuyết cầu xanh",
-      price: "30.000",
-      time: "13/12/2024",
-      desc: "Trong kỳ tiếp theo của Ravolution Music Festival sẽ diễn ra vào tháng 12 năm nay tại TP.HCM - kỷ niệm phiên bản thứ 10 mang tên “RAVO-X”, hứa hẹn sẽ mang đến những trải nghiệm và cách tiếp cận đại chúng mới như một lời tri ân suốt quãng thời gian 7 năm vừa qua. RAVO-X sẽ tiếp tục thông điệp mang tính thời đại đã được xây dựng cùng Pepsi trong 2 kỳ trước. Từ UNIVERSAL LOVE với thông điệp tìm lại yêu thương bản thân và hòa cùng năng lượng của vũ trụ, đến “UNITY” sự gắn kết và hãy chờ đón câu chuyện tiếp theo của kỳ tiếp theo này nhé. ",
-      brand: "Karen Gilchrist, James Earl Jones",
-      genres: "Action",
-      tags: "Action, Adventures, Horror",
-      cover: "./assets/img/product/Hoa tuyết cầu xanh.jpg",
-      video: "../video/video4.mp4",
-      date: "12-Aug-2015",
-      quantity: 1,
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 30k"
-    },
-    {
-      id: 10,
-      name: "Hoa cúc hoạ mi trắng",
-      price: "30.000",
-      time: "13/12/2024",
-      desc: "Trong kỳ tiếp theo của Ravolution Music Festival sẽ diễn ra vào tháng 12 năm nay tại TP.HCM - kỷ niệm phiên bản thứ 10 mang tên “RAVO-X”, hứa hẹn sẽ mang đến những trải nghiệm và cách tiếp cận đại chúng mới như một lời tri ân suốt quãng thời gian 7 năm vừa qua. RAVO-X sẽ tiếp tục thông điệp mang tính thời đại đã được xây dựng cùng Pepsi trong 2 kỳ trước. Từ UNIVERSAL LOVE với thông điệp tìm lại yêu thương bản thân và hòa cùng năng lượng của vũ trụ, đến “UNITY” sự gắn kết và hãy chờ đón câu chuyện tiếp theo của kỳ tiếp theo này nhé. ",
-      brand: "Karen Gilchrist, James Earl Jones",
-      genres: "Action",
-      tags: "Action, Adventures, Horror",
-      cover: "./assets/img/product/Hoa cúc họa mi trắng.jpg",
-      video: "../video/video4.mp4",
-      date: "12-Aug-2015",
-      quantity: 1,
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 30k"
-    },
-    {
-      id: 11,
-      name: "Chậu quýt",
-      price: "35.000",
-      time: "23/11/2023",
-      desc: "Trong kỳ tiếp theo của Ravolution Music Festival sẽ diễn ra vào tháng 12 năm nay tại TP.HCM - kỷ niệm phiên bản thứ 10 mang tên “RAVO-X”, hứa hẹn sẽ mang đến những trải nghiệm và cách tiếp cận đại chúng mới như một lời tri ân suốt quãng thời gian 7 năm vừa qua. RAVO-X sẽ tiếp tục thông điệp mang tính thời đại đã được xây dựng cùng Pepsi trong 2 kỳ trước. Từ UNIVERSAL LOVE với thông điệp tìm lại yêu thương bản thân và hòa cùng năng lượng của vũ trụ, đến “UNITY” sự gắn kết và hãy chờ đón câu chuyện tiếp theo của kỳ tiếp theo này nhé. ",
-      starring: "Karen Gilchrist, James Earl Jones",
-      genres: "Action",
-      tags: "Action, Adventures, Horror",
-      cover: "./assets/img/product/Chậu quýt.jpg",
-      video: "../video/video1.mp4",
-      date: "20-Jan-1997",
-      quantity: 1,
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 35k"
-    },
-    {
-      id: 12,
-      name: "Chậu tym hồng xanh",
-      price: "35.000",
-      time: "24/11/2023",
-      desc: "The island, like its inhabitants, is wholly fictional. Kong's island home in the Pacific makes its first appearance, along with Kong himself, in the 1933 film King Kong. ",
-      starring: "Brenda Chapman, Jeff Nathanson",
-      genres: "Adventures",
-      tags: "Adventures,Animation,Family",
-      cover: "./assets/img/product/Chậu tym hồng xanh.jpg",
-      video: "../video/video2.mp4",
-      date: "10-JUL-2021",
-      quantity: 1,
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 35k"
-    },
-    {
-      id: 13,
-      name: "Hoa anh thảo",
-      price: "35.000",
-      time: "23/12/2023",
-      desc: "Piracy is an act of robbery or criminal violence by ship or boat-borne attackers upon another ship or a coastal area, typically with the goal of stealing cargo and other valuable items or properties. ",
-      starring: "James Chinlund, Jeff Nathanson",
-      genres: "Adventures",
-      tags: "Adventures,Action ",
-      cover: "./assets/img/product/Hoa anh thảo.jpg",
-      video: "../video/video3.mp4",
-      date: "20-FEB-2010",
-      quantity: 1,
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 35k"
-    },
-    {
-      id: 14,
-      name: "Hoa anh túc xanh",
-      price: "35.000",
-      time: "13/12/2024",
-      desc: "Trong kỳ tiếp theo của Ravolution Music Festival sẽ diễn ra vào tháng 12 năm nay tại TP.HCM - kỷ niệm phiên bản thứ 10 mang tên “RAVO-X”, hứa hẹn sẽ mang đến những trải nghiệm và cách tiếp cận đại chúng mới như một lời tri ân suốt quãng thời gian 7 năm vừa qua. RAVO-X sẽ tiếp tục thông điệp mang tính thời đại đã được xây dựng cùng Pepsi trong 2 kỳ trước. Từ UNIVERSAL LOVE với thông điệp tìm lại yêu thương bản thân và hòa cùng năng lượng của vũ trụ, đến “UNITY” sự gắn kết và hãy chờ đón câu chuyện tiếp theo của kỳ tiếp theo này nhé. ",
-      starring: "Karen Gilchrist, James Earl Jones",
-      genres: "Action",
-      tags: "Action, Adventures, Horror",
-      cover: "./assets/img/product/Hoa anh túc xanh.jpg",
-      video: "../video/video4.mp4",
-      date: "12-Aug-2015",
-      quantity: 1,
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 35k"
-    },
-    {
-      id: 15,
-      name: "Hoa hướng dương mặt cười",
-      price: "35.000",
-      time: "23/11/2023",
-      desc: "Trong kỳ tiếp theo của Ravolution Music Festival sẽ diễn ra vào tháng 12 năm nay tại TP.HCM - kỷ niệm phiên bản thứ 10 mang tên “RAVO-X”, hứa hẹn sẽ mang đến những trải nghiệm và cách tiếp cận đại chúng mới như một lời tri ân suốt quãng thời gian 7 năm vừa qua. RAVO-X sẽ tiếp tục thông điệp mang tính thời đại đã được xây dựng cùng Pepsi trong 2 kỳ trước. Từ UNIVERSAL LOVE với thông điệp tìm lại yêu thương bản thân và hòa cùng năng lượng của vũ trụ, đến “UNITY” sự gắn kết và hãy chờ đón câu chuyện tiếp theo của kỳ tiếp theo này nhé. ",
-      starring: "Karen Gilchrist, James Earl Jones",
-      genres: "Action",
-      tags: "Action, Adventures, Horror",
-      cover: "./assets/img/product/Hướng dương mặt cười vàng cam.jpg",
-      video: "../video/video1.mp4",
-      date: "20-Jan-1997",
-      quantity: 1,
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 35k"
-    },
-    {
-      id: 16,
-      name: "Hoa tulip vàng 3 bông",
-      price: "35.000",
-      time: "24/11/2023",
-      desc: "The island, like its inhabitants, is wholly fictional. Kong's island home in the Pacific makes its first appearance, along with Kong himself, in the 1933 film King Kong. ",
-      starring: "Brenda Chapman, Jeff Nathanson",
-      genres: "Adventures",
-      tags: "Adventures,Animation,Family",
-      cover: "./assets/img/product/Hoa tulip vàng 3 bông.jpg",
-      video: "../video/video2.mp4",
-      date: "10-JUL-2021",
-      quantity: 1,
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 35k"
-    },
-    {
-      id: 17,
-      name: "Hoa huệ mưa vàng",
-      price: "35.000",
-      time: "23/12/2023",
-      desc: "Piracy is an act of robbery or criminal violence by ship or boat-borne attackers upon another ship or a coastal area, typically with the goal of stealing cargo and other valuable items or properties. ",
-      brand: "James Chinlund, Jeff Nathanson",
-      genres: "Adventures",
-      tags: "Adventures,Action ",
-      cover: "./assets/img/product/Hoa huệ mưa vàng.jpg",
-      video: "../video/video3.mp4",
-      date: "20-FEB-2010",
-      quantity: 1,
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 35k"
-    },
-    {
-      id: 18,
-      name: "Hoa linh lan nhiều màu",
-      price: "35.000",
-      time: "13/12/2024",
-      desc: "Trong kỳ tiếp theo của Ravolution Music Festival sẽ diễn ra vào tháng 12 năm nay tại TP.HCM - kỷ niệm phiên bản thứ 10 mang tên “RAVO-X”, hứa hẹn sẽ mang đến những trải nghiệm và cách tiếp cận đại chúng mới như một lời tri ân suốt quãng thời gian 7 năm vừa qua. RAVO-X sẽ tiếp tục thông điệp mang tính thời đại đã được xây dựng cùng Pepsi trong 2 kỳ trước. Từ UNIVERSAL LOVE với thông điệp tìm lại yêu thương bản thân và hòa cùng năng lượng của vũ trụ, đến “UNITY” sự gắn kết và hãy chờ đón câu chuyện tiếp theo của kỳ tiếp theo này nhé. ",
-      brand: "Karen Gilchrist, James Earl Jones",
-      genres: "Action",
-      tags: "Action, Adventures, Horror",
-      cover: "./assets/img/product/Hoa linh lan nhiều màu.jpg",
-      video: "../video/video4.mp4",
-      date: "12-Aug-2015",
-      quantity: 1,
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 35k"
-    },
-    {
-      id: 19,
-      name: "Chậu tym vàng",
-      price: "35.000",
-      time: "13/12/2024",
-      desc: "Trong kỳ tiếp theo của Ravolution Music Festival sẽ diễn ra vào tháng 12 năm nay tại TP.HCM - kỷ niệm phiên bản thứ 10 mang tên “RAVO-X”, hứa hẹn sẽ mang đến những trải nghiệm và cách tiếp cận đại chúng mới như một lời tri ân suốt quãng thời gian 7 năm vừa qua. RAVO-X sẽ tiếp tục thông điệp mang tính thời đại đã được xây dựng cùng Pepsi trong 2 kỳ trước. Từ UNIVERSAL LOVE với thông điệp tìm lại yêu thương bản thân và hòa cùng năng lượng của vũ trụ, đến “UNITY” sự gắn kết và hãy chờ đón câu chuyện tiếp theo của kỳ tiếp theo này nhé. ",
-      brand: "Karen Gilchrist, James Earl Jones",
-      genres: "Action",
-      tags: "Action, Adventures, Horror",
-      cover: "./assets/img/product/Chậu tym vàng.jpg",
-      video: "../video/video4.mp4",
-      date: "12-Aug-2015",
-      quantity: 1,
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 35k"
-    },
-    {
-      id: 20,
-      name: "Hoa huệ cam",
-      price: "35.000",
-      time: "13/12/2024",
-      desc: "Trong kỳ tiếp theo của Ravolution Music Festival sẽ diễn ra vào tháng 12 năm nay tại TP.HCM - kỷ niệm phiên bản thứ 10 mang tên “RAVO-X”, hứa hẹn sẽ mang đến những trải nghiệm và cách tiếp cận đại chúng mới như một lời tri ân suốt quãng thời gian 7 năm vừa qua. RAVO-X sẽ tiếp tục thông điệp mang tính thời đại đã được xây dựng cùng Pepsi trong 2 kỳ trước. Từ UNIVERSAL LOVE với thông điệp tìm lại yêu thương bản thân và hòa cùng năng lượng của vũ trụ, đến “UNITY” sự gắn kết và hãy chờ đón câu chuyện tiếp theo của kỳ tiếp theo này nhé. ",
-      brand: "Karen Gilchrist, James Earl Jones",
-      genres: "Action",
-      tags: "Action, Adventures, Horror",
-      cover: "./assets/img/product/Hoa huệ cam.jpg",
-      video: "../video/video4.mp4",
-      date: "12-Aug-2015",
-      quantity: 1,
-      score: 5,
-      category: "Hoa chậu",
-      subcategory: "Đồng giá 35k"
-    },
-  ];
+function generateRandomScore() {
+  return (Math.random() * (5.0 - 4.0) + 4.0).toFixed(1);
+}
+function setDescription(subcategory) {
+  let desc;
+
+  switch(subcategory) {
+      case "Móc khoá":
+          desc = "Móc khoá hoa len thủ công tinh xảo, thích hợp để trang trí hoặc làm quà.";
+          break;
+      case "Lược cài":
+          desc = "Lược cài hoa len độc đáo, mang lại vẻ đẹp nhẹ nhàng và thanh lịch.";
+          break;
+      case "Kẹp":
+          desc = "Kẹp hoa len dễ thương, giúp làm nổi bật mái tóc của bạn.";
+          break;
+      default:
+          desc = "Sản phẩm hoa len tinh tế, phù hợp với nhiều không gian và mục đích trang trí.";
+          break;
+  }
+
+  return desc;
+}
+  const product = [
+
+          {
+            id: 1,
+            name: "Hoa dã quỳnh",
+            price: "25.000",
+            desc:setDescription("subcategory"),
+            cover: "./assets/img/product/full/Đồng giá 25K/Hoa dã quỳ.jpg",
+            score: generateRandomScore(),             
+            category: "Hoa chậu",
+            subcategory: "Đồng giá 25k"
+          },
+          {
+              id: 2,
+              name: "Hoa thạch thảo hồng",
+              price: "25.000",
+              desc:setDescription("Đồng giá 25k"),
+              cover: "./assets/img/product/full/Đồng giá 25K/Hoa thạch thảo hồng.jpg",
+              score: generateRandomScore(),
+              category: "Hoa chậu",
+              subcategory: "Đồng giá 25k"
+            },
+            {
+              id: 3,
+              name: "Hoa thạch thảo 2",
+              price: "25.000",
+              desc:setDescription("subcategory"),
+              cover: "./assets/img/product/full/Đồng giá 25K/Hoa thạch thảo(1).jpg",
+              score: generateRandomScore(),
+              category: "Hoa chậu",
+              subcategory: "Đồng giá 25k"
+            },
+            {
+              id: 4,
+              name: "Hoa thạch thảo ",
+              price: "25.000",
+              desc:setDescription("subcategory"),
+              cover: "./assets/img/product/full/Đồng giá 25K/Hoa thạch thảo.jpg",
+              score: generateRandomScore(),                
+              category: "Hoa chậu",
+              subcategory: "Đồng giá 25k"
+            },
+            {
+              id: 5,
+              name: "Hoa tulip",
+              price: "25.000",
+              desc:setDescription("subcategory"),
+              cover: "./assets/img/product/full/Đồng giá 25K/Hoa tulip.jpg",
+              score: generateRandomScore(),
+              category: "Hoa chậu",
+              subcategory: "Đồng giá 25k"
+            },
+            {
+              id: 6,
+              name: "Xương rồng",
+              price: "25.000",
+              desc:setDescription("subcategory"),
+              cover: "./assets/img/product/full/Đồng giá 25K/Xương rồng.jpg",
+              score: generateRandomScore(),
+              category: "Hoa chậu",
+              subcategory: "Đồng giá 25k"
+            },
+            {
+              id: 7,
+              name: "Cúc hồng",
+              price: "30.000",
+              desc:setDescription("subcategory"),
+              cover: "./assets/img/product/full/Đồng giá 30k/Cúc hồng.jpg",
+              score: generateRandomScore(),
+              category: "Hoa chậu",
+              subcategory: "Đồng giá 30k"
+            },
+            {
+              id: 8,
+              name: "Cúc xanh",
+              price: "30.000",
+              desc:setDescription("subcategory"),
+              cover: "./assets/img/product/full/Đồng giá 30k/Cúc xanh.jpg",
+              score: generateRandomScore(),
+              category: "Hoa chậu",
+              subcategory: "Đồng giá 30k"
+            },{
+              id: 9,
+              name: "Hoa bánh kem",
+              price: "30.000",
+              desc:setDescription("subcategory"),
+              cover: "./assets/img/product/full/Đồng giá 30k/Hoa bánh kem.jpg",
+              score: generateRandomScore(),
+              category: "Hoa chậu",
+              subcategory: "Đồng giá 30k"
+            },{
+              id: 10,
+              name: "Hoa cúc họa mi trắng",
+              price: "30.000",
+              desc:setDescription("subcategory"),
+              cover: "./assets/img/product/full/Đồng giá 30k/Hoa cúc họa mi trắng.jpg",
+              score: generateRandomScore(),
+              category: "Hoa chậu",
+              subcategory: "Đồng giá 30k"
+            },{
+              id: 11,
+              name: "Hoa cúc trắng nhuỵ cam",
+              price: "30.000",
+              desc:setDescription("subcategory"),
+              cover: "./assets/img/product/full/Đồng giá 30k/Hoa cúc trắng nhuỵ cam.jpg",
+              score: generateRandomScore(),
+              category: "Hoa chậu",
+              subcategory: "Đồng giá 30k"
+            },
+             {
+              id: 12,
+              name: "Hoa hồng đỏ",
+              price: "30.000",
+              desc:setDescription("subcategory"),
+              cover: "./assets/img/product/full/Đồng giá 30k/Hoa hồng đỏ.jpg",
+              score: generateRandomScore(),
+              category: "Hoa chậu",
+              subcategory: "Đồng giá 30k"
+            },{
+              id: 13,
+              name: "Hoa hướng dương 1 bông",
+              price: "30.000",
+              desc:setDescription("subcategory"),
+              cover: "./assets/img/product/full/Đồng giá 30k/Hoa hướng dương 1 bông.jpg",
+              score: generateRandomScore(),
+              category: "Hoa chậu",
+              subcategory: "Đồng giá 30k"
+            },{
+              id: 14,
+              name: "Hoa tuyết cầu xanh",
+              price: "30.000",
+              desc:setDescription("subcategory"),
+              cover: "./assets/img/product/full/Đồng giá 30k/Hoa tuyết cầu xanh.jpg",
+              score: generateRandomScore(),
+              category: "Hoa chậu",
+              subcategory: "Đồng giá 30k"
+            }
+            ,{
+              id: 15,
+              name: "Hướng dương 2 hoa nhỏ",
+              price: "30.000",
+              desc:setDescription("subcategory"),
+              cover: "./assets/img/product/full/Đồng giá 30k/Hướng dương 2 hoa nhỏ.jpg",
+              score: generateRandomScore(),
+              category: "Hoa chậu",
+              subcategory: "Đồng giá 30k"
+            }, {
+              id: 72,
+              name: "Kẹp ếch xanh",
+              price: "Liên hệ - ?",
+              desc:setDescription("Kẹp"),
+              cover: "./assets/img/product/full/Phụ kiện nhỏ/Kẹp ếch xanh.jpg",
+              score: generateRandomScore(),
+              category: "Phụ kiện nhỏ",
+              subcategory: "Kẹp"
+            },
+            {
+              id: 73,
+              name: "Kẹp hoa nhỏ",
+              price: "Liên hệ - ?",
+              desc:setDescription("Kẹp"),
+              cover: "./assets/img/product/full/Phụ kiện nhỏ/Kẹp hoa nhỏ.jpg",
+              score: generateRandomScore(),
+              category: "Phụ kiện nhỏ",
+              subcategory: "Kẹp"
+            },
+            {
+              id: 74,
+              name: "Kẹp kẹo ngọt",
+              price: "Liên hệ - ?",
+              desc:setDescription("Kẹp"),
+              cover: "./assets/img/product/full/Phụ kiện nhỏ/Kẹp kẹo ngọt.jpg",
+              score: generateRandomScore(),
+              category: "Phụ kiện nhỏ",
+              subcategory: "Kẹp"
+            },
+            {
+              id: 75,
+              name: "Kẹp mầm non",
+              price: "Liên hệ - ?",
+              desc:setDescription("Kẹp"),
+              cover: "./assets/img/product/full/Phụ kiện nhỏ/Kẹp mầm non.jpg",
+              score: generateRandomScore(),
+              category: "Phụ kiện nhỏ",
+              subcategory: "Kẹp"
+            },
+            {
+              id: 76,
+              name: "Kẹp ông già noel",
+              price: "Liên hệ - ?",
+              desc:setDescription("Kẹp"),
+              cover: "./assets/img/product/full/Phụ kiện nhỏ/Kẹp ông già noel.jpg",
+              score: generateRandomScore(),
+              category: "Phụ kiện nhỏ",
+              subcategory: "Kẹp"
+            },
+            {
+              id: 77,
+              name: "Kẹp ong vàng",
+              price: "Liên hệ - ?",
+              desc:setDescription("Kẹp"),
+              cover: "./assets/img/product/full/Phụ kiện nhỏ/Kẹp ong vàng.jpg",
+              score: generateRandomScore(),
+              category: "Phụ kiện nhỏ",
+              subcategory: "Kẹp"
+            },
+            {
+              id: 78,
+              name: "Kẹp tai thỏ cà rốt",
+              price: "Liên hệ - ?",
+              desc:setDescription("Kẹp"),
+              cover: "./assets/img/product/full/Phụ kiện nhỏ/Kẹp tai thỏ cà rốt.jpg",
+              score: generateRandomScore(),
+              category: "Phụ kiện nhỏ",
+              subcategory: "Kẹp"
+            },{
+              id: 81,
+              name: "Lược cài mèo đen",
+              price: "Liên hệ - ?",
+              desc:setDescription("Lược cài"),
+              cover: "./assets/img/product/full/Phụ kiện nhỏ/Lược cài mèo đen.jpg",
+              score: generateRandomScore(),
+              category: "Phụ kiện nhỏ",
+              subcategory: "Lược cài"
+            },
+            {
+              id: 82,
+              name: "Móc khóa bắp cải nhiều màu",
+              price: "Liên hệ - ?",
+              desc:setDescription("Móc khoá"),
+              cover: "./assets/img/product/full/Phụ kiện nhỏ/Móc khóa bắp cải nhiều màu.jpg",
+              score: generateRandomScore(),
+              category: "Phụ kiện nhỏ",
+              subcategory: "Móc khoá"
+            },
+            {
+              id: 83,
+              name: "Móc khóa dâu xanh",
+              price: "Liên hệ - ?",
+              desc:setDescription("Móc khoá"),
+              cover: "./assets/img/product/full/Phụ kiện nhỏ/Móc khóa dâu xanh.jpg",
+              score: generateRandomScore(),
+              category: "Phụ kiện nhỏ",
+              subcategory: "Móc khoá"
+            },];
